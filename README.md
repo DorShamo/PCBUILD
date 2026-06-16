@@ -1,43 +1,33 @@
-# 💻 Bistro: Restaurant Management System
+# 💻 PC-Build: E-commerce Store
 
 ### 🖥️ Project Overview
 
-Bistro is a comprehensive backend-focused restaurant management system developed as a core project during my second year of Software Engineering studies. The application streamlines restaurant operations by managing table reservations, tracking menu items, and handling customer orders through a robust relational database structure. It emphasizes clean separation of concerns using a Model-View-Controller (MVC) architecture.
+This is a static, responsive web application built to simulate an online shopping experience for PC components. The project focuses on a clean user interface (UI) and smooth client-side interaction, allowing users to browse through various hardware parts and manage a virtual shopping cart.
 
 ---
 
 ### 🛠️ Technologies Used
 
-* **Java:** Used for core business logic, controller implementation, and data processing.
-* **MySQL:** Managed the relational database schema, including tables for reservations, menu items, and order history.
-* **SQL (JDBC):** Facilitated secure communication between the Java application and the database.
-* **UML:** Employed for system design, including class diagrams and sequence diagrams to map out the application flow.
-* **Git:** Version control used to track development progress and collaboration.
+* **HTML5:** For the structural layout of the web pages.
+* **CSS3:** For styling, including responsive design to ensure the site looks great on both desktops and mobile devices.
+* **JavaScript (Vanilla):** For client-side logic, including dynamic product filtering and shopping cart functionality.
 
 ---
 
-### 🚀 Key Features
+### 🚀 Features
 
-* **Reservation Management:** A dedicated `Reservation_Controller` handles booking requests, checking for table availability, and managing time slots.
-* **Dynamic Menu Handling:** Ability to add, update, or remove menu items from the database in real-time.
-* **Order Tracking:** Logic to link customer orders to specific tables and track the status of items prepared in the kitchen.
-* **Data Integrity:** Implemented SQL constraints and Java validation logic to ensure consistent data across all entities.
-* **Scalable Architecture:** Designed with modularity in mind, allowing for future expansion such as adding staff management or payment integration.
-
----
-
-### 🏗️ System Architecture
-
-The project follows a standard 3-tier architecture, ensuring that the presentation layer is decoupled from the data management layer. The `Reservation_Controller` acts as the intermediary, processing user inputs and executing the necessary SQL queries to update the state of the restaurant.
+* **Product Catalog:** A display of various computer parts (CPUs, GPUs, RAM, etc.) with detailed descriptions and pricing.
+* **Dynamic Shopping Cart:** Users can add items to their cart and see updates in real-time.
+* **Responsive Design:** Optimized layout for different screen sizes.
+* **Interactive UI:** Smooth transitions and interactive elements using CSS and JavaScript.
 
 ---
 
 ### 📂 Project Structure
 
 ```text
-/Bistro-Project
-├── /src/controllers    # Logic for reservations and order management
-├── /src/models         # Database entities (Menu, Table, Order)
-├── /sql                # Database schema and initial data scripts
-├── /docs               # UML diagrams and project documentation
-└── README.md
+/PC-Build-Store
+├── /css          # Stylesheets and responsive design media queries
+├── /js           # Application logic (cart management, filtering, rendering)
+├── /assets       # Images, logos, and product icons
+└── index.html    # Main entry point of the application
